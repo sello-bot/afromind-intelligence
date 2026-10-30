@@ -1,0 +1,1 @@
+# afromind-intelligence
