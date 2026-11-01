@@ -8,6 +8,7 @@ class Settings(BaseSettings):
     ai_base_url: str = "https://api.openai.com/v1"
     ai_api_key: str = ""
     ai_model: str = "gpt-4o-mini"
+    ai_vision_model: str = "qwen/qwen3.8-27b"
     ai_temperature: float = 0.7
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")

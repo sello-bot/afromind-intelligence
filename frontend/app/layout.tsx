@@ -3,8 +3,8 @@ import "./globals.css";
 import "highlight.js/styles/github-dark.css";
 
 export const metadata: Metadata = {
-  title: "LUNA AI — Afromind Tech",
-  description: "LUNA AI — The Intelligence. By Afromind Tech.",
+  title: "KGOLE AI — Afromind Tech",
+  description: "KGOLE AI — The Intelligence. By Afromind Tech.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

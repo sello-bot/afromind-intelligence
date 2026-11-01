@@ -1,51 +1,106 @@
 @import "tailwindcss";
 
-:root { color-scheme: dark; }
-* { box-sizing: border-box; }
-html, body { min-height: 100%; }
-body { margin: 0; background: #050705; color: #f4f7f1; }
-button, textarea { font: inherit; }
-::selection { background: rgba(124,252,0,.25); }
+/* =========================================
+   AFROMIND INTELLIGENCE — KGOLE AI VISUAL SYSTEM
+========================================= */
 
-/* LUNA AI Markdown code highlighting */
-.markdown-body pre code {
-  display: block;
-  overflow-x: auto;
-  background: transparent;
-  padding: 0;
-  color: #f5f1f2;
+:root {
+  color-scheme: dark;
+  --background: #080507;
+  --surface: #12090D;
+  --primary: #FF1744;
+  --crimson: #B00020;
+  --glow: #FF4D6D;
+  --foreground: #F5F1F2;
+  --muted: #A9A0A4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+button,
+textarea,
+input {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(255, 23, 68, 0.3);
+}
+
+/* =========================================
+   KGOLE AI — MARKDOWN
+========================================= */
+
+.markdown-body {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 
 .markdown-body pre {
-  scrollbar-width: thin;
-  scrollbar-color: #b00020 #080507;
-}
-
-.markdown-body :not(pre) > code {
-  border: 1px solid rgba(255, 23, 68, 0.15);
-}
-/* LUNA AI Markdown formatting */
-.markdown-body pre {
+  max-width: 100%;
   margin: 1rem 0;
   padding: 1rem;
   overflow-x: auto;
+  white-space: pre;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0.75rem;
   background: #080507;
   scrollbar-width: thin;
+  scrollbar-color: #B00020 #080507;
 }
 
 .markdown-body pre code {
   display: block;
-  background: transparent;
   padding: 0;
-  color: #f5f1f2;
+  overflow-x: auto;
+  background: transparent;
+  color: #F5F1F2;
+  white-space: pre;
 }
 
 .markdown-body :not(pre) > code {
+  padding: 2px 5px;
   border: 1px solid rgba(255, 23, 68, 0.15);
   border-radius: 4px;
-  padding: 2px 5px;
-  color: #ff8294;
+  color: #FF8294;
   background: rgba(255, 23, 68, 0.07);
+}
+
+.markdown-body table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.markdown-body th,
+.markdown-body td {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.markdown-body > :first-child {
+  margin-top: 0;
+}
+
+.markdown-body > :last-child {
+  margin-bottom: 0;
 }
