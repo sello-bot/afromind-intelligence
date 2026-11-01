@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+html, body { min-height: 100%; }
+body { margin: 0; background: #050705; color: #f4f7f1; }
+button, textarea { font: inherit; }
+::selection { background: rgba(124,252,0,.25); }
+
+/* LUNA AI Markdown code highlighting */
+.markdown-body pre code {
+  display: block;
+  overflow-x: auto;
+  background: transparent;
+  padding: 0;
+  color: #f5f1f2;
+}
+
+.markdown-body pre {
+  scrollbar-width: thin;
+  scrollbar-color: #b00020 #080507;
+}
+
+.markdown-body :not(pre) > code {
+  border: 1px solid rgba(255, 23, 68, 0.15);
+}
+/* LUNA AI Markdown formatting */
+.markdown-body pre {
+  margin: 1rem 0;
+  padding: 1rem;
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  background: #080507;
+  scrollbar-width: thin;
+}
+
+.markdown-body pre code {
+  display: block;
+  background: transparent;
+  padding: 0;
+  color: #f5f1f2;
+}
+
+.markdown-body :not(pre) > code {
+  border: 1px solid rgba(255, 23, 68, 0.15);
+  border-radius: 4px;
+  padding: 2px 5px;
+  color: #ff8294;
+  background: rgba(255, 23, 68, 0.07);
+}
